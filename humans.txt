@@ -1,0 +1,24 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+                            
+Name: Jax Chastain                       
+LinkedIn: https://www.linkedin.com/in/jaxchastain/                      
+Twitter: @jaxatto                       
+Location: Austin, TX
+
+
+# SITE
+                            
+Last update: 2020/01/16                   
+Standards: HTML5, CSS3                       
+Components: N/A      
+Other Technologies: Sass, npm, git
+Packages: simple-hot-reload-server
+Software: VS Code, Terminal, Figma
+
+
+# THANKS
+
+<3
