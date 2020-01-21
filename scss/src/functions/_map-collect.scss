@@ -1,8 +1,40 @@
+  
+// ---------------------------------------------------------
+//  author: Jessica Biggs
+//  git: https://gist.github.com/bigglesrocks/d75091700f8f2be5abfe 
+// 
+//
+//  Map Collect function
+//  Since the builtin map-merge function in Sass only take 2 arguments, it can only merge 2 maps at a time.
+//  The map-collect function below allows you to combine multiple maps together in a cleaner way.
+//
+//  ---
+//  Usage
+//  ---
+// 
+//  Set up some maps
+//  $reds: ( red: #CE2F3F, maroon: #931638, pink: #E28190 );
+//  $blues: ( blue: #1381B3, navy: #2c3e50, robin: #B9D9DB );
+//  $greens: ( green: #87A03C, lime: #D4D848, teal: #00818B );
+//
+//  Now instead of this (ew):
+//  $colors: ( red: #CE2F3F, maroon: #931638, pink: #E28190, blue: #1381B3, navy: #2c3e50, robin: #B9D9DB, green: #87A03C, lime: #D4D848, teal: #00818B );
+//  
+//  or this (tedious if you have more than a few maps):
+//  $colors: map-merge($blues, map-merge($reds, $greens));
+//   
+//  we can simply do the following:
+//  $colors: map-collect($reds, $blues, $greens); // so clean!
+//
+// ---------------------------------------------------------
+
+
 @function map-collect($maps...) {
     $collection: ();
-  
+
     @each $map in $maps {
-      $collection: map-merge($collection, $map);
+        $collection: map-merge($collection, $map);
     }
+    
     @return $collection;
-  }
+}
