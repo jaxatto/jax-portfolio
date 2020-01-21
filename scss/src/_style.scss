@@ -9,13 +9,13 @@
 // html {
 // }
 
-body {
-    background: get('color.primary');
-    // color: clr(dark); 
-    // font-family: $font-stack;
-    // font-size: fs(default);
-    // line-height: 1.5;
-}
+// body {
+//     // background: get('color.primary');
+//     // color: clr(dark); 
+//     // font-family: $font-stack;
+//     // font-size: fs(default);
+//     // line-height: 1.5;
+// }
 
 // .container {
 //     display: grid;
@@ -30,13 +30,7 @@ body {
 //     font-size: rem-calc(100px); 
 // }
 
-
-
-@debug get('color.primary');
-@debug map-get($color-test, primary);
-
-
-
+@debug map-get($color, primary);
 
 // stuff????
 

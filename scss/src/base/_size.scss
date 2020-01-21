@@ -7,30 +7,23 @@
 // i use multiples of 8 because it is easier to keep track of
 //
 // ---------------------------------------------------------
-
-@use '../functions';
-@use 'root' as *;
-
-$super-map: deep-map-merge(
-  (
-    'size': (
-        // typical margin and padding classes
-        'mp': (
-            // i set zero first to be consistent
-            '0': rem-calc(0px),
-            '1': rem-calc(8px),
-            '2': rem-calc(16px),
-            '3': rem-calc(24px),
-            '4': rem-calc(32px),
-            '5': rem-calc(40px)
-        ), 
-        // big area margin and padding
-        'gap': (
-            'sm': rem-calc(24px),
-            'md': rem-calc(40px), 
-            'lg': rem-calc(60px),
-            'xl': rem-calc(80px)
-        )
+  
+$size: (
+    // typical margin and padding classes
+    'mp': (
+        // i set zero first to be consistent
+        '0': rem-calc(0px),
+        '1': rem-calc(8px),
+        '2': rem-calc(16px),
+        '3': rem-calc(24px),
+        '4': rem-calc(32px),
+        '5': rem-calc(40px)
+    ), 
+    // big area margin and padding
+    'gap': (
+        'sm': rem-calc(24px),
+        'md': rem-calc(40px), 
+        'lg': rem-calc(60px),
+        'xl': rem-calc(80px)
     )
-  )
 );
