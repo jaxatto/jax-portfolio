@@ -1,0 +1,30 @@
+/* Error: ("color": ("primary": #FFB6BE, "primary-dark": #FF8795, "secondary": #56FAF1, "tertiary": #FDEF3E, "dark": #203735, "light": #FFFFFF, "link": #EA5263)) isn't a valid CSS value.
+ *    ,
+ * 7  | /   (
+ * 8  | |     'color': (
+ * 9  | |         'primary':       #FFB6BE,
+ * 10 | |         'primary-dark':  #FF8795, 
+ * 11 | |         'secondary':     #56FAF1,
+ * 12 | |         'tertiary':      #FDEF3E, 
+ * 13 | |         'dark':          #203735, 
+ * 14 | |         'light':         #FFFFFF, 
+ * 15 | |         'link':          #EA5263
+ * 16 | |     )
+ * 17 | |   ),
+ *    | '---^
+ *    '
+ *   scss/src/base/_color.scss 7:3  @forward
+ *   scss/src/base/_index.scss 4:1  @forward
+ *   scss/src/_index.scss 3:1       @use
+ *   scss/output.scss 2:1           root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: (\"color\": (\"primary\": #FFB6BE, \"primary-dark\": #FF8795, \"secondary\": #56FAF1, \"tertiary\": #FDEF3E, \"dark\": #203735, \"light\": #FFFFFF, \"link\": #EA5263)) isn't a valid CSS value.\a    \2577 \a 7  \2502  \250c    (\a 8  \2502  \2502      'color': (\a 9  \2502  \2502          'primary':       #FFB6BE,\a 10 \2502  \2502          'primary-dark':  #FF8795, \a 11 \2502  \2502          'secondary':     #56FAF1,\a 12 \2502  \2502          'tertiary':      #FDEF3E, \a 13 \2502  \2502          'dark':          #203735, \a 14 \2502  \2502          'light':         #FFFFFF, \a 15 \2502  \2502          'link':          #EA5263\a 16 \2502  \2502      )\a 17 \2502  \2502    ),\a    \2502  \2514 \2500 \2500 \2500 ^\a    \2575 \a   scss/src/base/_color.scss 7:3  @forward\a   scss/src/base/_index.scss 4:1  @forward\a   scss/src/_index.scss 3:1       @use\a   scss/output.scss 2:1           root stylesheet";
+}

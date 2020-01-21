@@ -1,0 +1,20 @@
+// ---------------------------------------------------------
+// 
+// _rem-calc.scss
+//
+// very, very simple function that converts pixels to rems 
+// using the root size defined in your variables.
+//
+// example use:
+// rem-calc(40px)
+// font-size: rem-calc(20px)
+// $h1: rem-calc(56px)
+//
+// be sure to change "root" to match your variable name
+// 
+// ---------------------------------------------------------
+
+@function rem-calc($size) {
+    $remSize: $size / $size-root;
+    @return #{$remSize}rem;
+}

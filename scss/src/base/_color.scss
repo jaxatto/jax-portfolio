@@ -1,0 +1,30 @@
+// _colors.scss 
+
+@use '../functions';
+@use 'root' as *;
+
+$super-map: deep-map-merge(
+  (
+    'color': (
+        'primary':       #FFB6BE,
+        'primary-dark':  #FF8795, 
+        'secondary':     #56FAF1,
+        'tertiary':      #FDEF3E, 
+        'dark':          #203735, 
+        'light':         #FFFFFF, 
+        'link':          #EA5263
+    )
+  ),
+  $super-map,
+  false
+);
+
+$color-test: (
+    'primary':       #FFB6BE,
+    'primary-dark':  #FF8795, 
+    'secondary':     #56FAF1,
+    'tertiary':      #FDEF3E, 
+    'dark':          #203735, 
+    'light':         #FFFFFF, 
+    'link':          #EA5263
+);
