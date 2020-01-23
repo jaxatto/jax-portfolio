@@ -1,0 +1,24 @@
+// ---------------------------------------------------------
+// _color.scss
+//
+// colors!!! named abstractly so if/when i change them, nobody gets hurt
+//
+// ---------------------------------------------------------
+@use '../functions/' as func;
+@use 'root' as *;
+
+$super-map: func.deep-map-merge(
+    (
+        'color': (
+            'primary':       #FFB6BE,
+            'primary-dark':  #FF8795, 
+            'secondary':     #56FAF1,
+            'tertiary':      #FDEF3E, 
+            'dark':          #203735, 
+            'light':         #FFFFFF, 
+            'link':          #EA5263
+        )
+    ),
+    $super-map,
+    true
+);

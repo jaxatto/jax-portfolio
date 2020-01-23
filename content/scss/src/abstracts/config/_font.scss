@@ -1,0 +1,30 @@
+// ---------------------------------------------------------
+// _font.scss
+//
+// setting values related to font
+// mixins will handle assingment to h1/h2/p, etc
+//
+// ---------------------------------------------------------
+
+@use '../functions/' as func;
+@use 'root' as *;
+
+$super-map: func.deep-map-merge(
+  (
+    'font': (
+      'family': "Heebo, 'Open Sans', Helvetica, sans-serif", 
+      'weight': (
+        'regular': 400, 
+        'bold': 500,
+        'black': 900
+      ),
+      'size': (
+        'sm': func.rem-calc(14px),
+        'md':  func.rem-calc(16px),
+        'lg':  func.rem-calc(20px),
+      )
+    )
+  ),
+  $super-map,
+  true
+);

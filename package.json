@@ -6,12 +6,12 @@
     "license": "MIT",
     "main": "index.html",
     "scripts": {
-        "autoprefixer": "postcss -u autoprefixer -r css/*.css",
-        "scss": "sass scss/output.scss css/style.css",
-        "serve": "browser-sync start --server --files \"css/*.css\"",
+        "autoprefixer": "postcss content/css/*.css -u autoprefixer -r",
+        "scss": "sass content/scss/output.scss content/css/style.css",
+        "serve": "browser-sync start --server --watch",
         "build:css": "npm run scss && npm run autoprefixer",
         "build": "npm run build:css",
-        "watch:css": "onchange \"scss\" -- npm run build:css",
+        "watch:css": "onchange 'content/**/*.scss' -- npm run build:css",
         "watch": "npm-run-all -p serve watch:css",
         "start": "npm run build && npm run watch"
     },

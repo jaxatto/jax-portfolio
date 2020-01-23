@@ -1,13 +1,13 @@
 // _main.scss 
 // this file contains non-abstract things
 
-@use 'functions' as *;
+@use 'abstracts' as *;
 @use 'base' as *;
 
-
-/* Content */ 
-// html {
-// }
+body {
+    background: teal;
+    text-align: center;
+}
 
 // body {
 //     // background: get('color.primary');
@@ -29,8 +29,6 @@
 // h1 {
 //     font-size: rem-calc(100px); 
 // }
-
-@debug map-get($color, primary);
 
 // stuff????
 

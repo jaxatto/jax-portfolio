@@ -14,6 +14,8 @@
 // 
 // ---------------------------------------------------------
 
+@use '../config/root' as *;
+
 @function rem-calc($size) {
     $remSize: $size / $size-root;
     @return #{$remSize}rem;

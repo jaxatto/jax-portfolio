@@ -1,0 +1,38 @@
+// ---------------------------------------------------------
+// _size.scss
+//
+// paddings and margins use these consistent values
+// these values produce rems based on $size-root
+// 
+// i use multiples of 8 because it is easier to keep track of
+//
+// ---------------------------------------------------------
+
+@use '../functions/' as func;
+@use 'root' as *;
+
+$super-map: func.deep-map-merge(
+  (
+    'size': (
+      // typical margin and padding classes
+      'mp': (
+          // i set zero first to be consistent
+          '0': func.rem-calc(0px),
+          '1': func.rem-calc(8px),
+          '2': func.rem-calc(16px),
+          '3': func.rem-calc(24px),
+          '4': func.rem-calc(32px),
+          '5': func.rem-calc(40px)
+      ), 
+      // big area margin and padding
+      'gap': (
+          'sm': func.rem-calc(24px),
+          'md': func.rem-calc(40px), 
+          'lg': func.rem-calc(60px),
+          'xl': func.rem-calc(80px)
+      )
+    )
+  ),
+  $super-map,
+  true
+);
