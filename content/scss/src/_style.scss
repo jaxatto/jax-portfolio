@@ -4,19 +4,30 @@
 @use 'abstracts' as *;
 @use 'base' as *;
 
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
 body {
     background: get('color.primary');
 }
 
-// .container {
-//     display: grid;
-//     grid-template-columns: auto 900px auto;
-// }
+.container {
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+    max-width: rem-calc(900px);
 
-// .content {
-//     // background: map($clr, light);
-// }
+    @include bp(lg) {
+        background: get('color.light');
+    }
+}
 
-// @mixin color-any($property, $value) {
-//     #{$property}: map-get($color, $value);
-// }
+section, footer {
+    background: get('color.light');
+    display: block;
+}

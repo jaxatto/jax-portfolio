@@ -10,3 +10,14 @@ body {
     font-weight: get('font.weight.regular');
     line-height: get('font.line-height.default');
 }
+
+h1 { 
+    color: get('color.primary-dark');
+    font-size: rem-calc(56px);
+    font-weight: get('font.weight.black');
+    letter-spacing: 0.1em;
+    line-height: rem-calc(86px);
+    margin: 0;
+    text-shadow: 4px 5px 0px get('color.dark');
+    -webkit-text-stroke: 1px get('color.dark');
+}
