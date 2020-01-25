@@ -38,7 +38,7 @@ body {
     }
 }
 
-section, footer {
+section {
     background: get('color.light');
     display: block;
 }
@@ -68,15 +68,5 @@ section, footer {
     @include bp(md) {
         margin: 0;
         padding: rem-calc(40px 80px);
-    }
-}
-
-footer {
-    color: get('color.dark'); 
-    padding: get('size.mp.3');
-    text-align: center;
-
-    span {
-        opacity: 0.5;
     }
 }

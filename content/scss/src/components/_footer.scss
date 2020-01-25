@@ -1,0 +1,15 @@
+@use '../abstracts/' as *;
+@use '../base/' as *;
+
+footer {
+    background: get('color.light');
+    color: get('color.dark');
+    display: block;
+    font-size: get('font.size.md'); 
+    padding: get('size.mp.3');
+    text-align: center;
+
+    span {
+        opacity: 0.5;
+    }
+}
