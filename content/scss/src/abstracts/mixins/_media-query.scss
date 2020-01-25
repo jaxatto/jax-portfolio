@@ -1,0 +1,24 @@
+// ---------------------------------------------------------
+// mixins: media queries
+//
+// usage
+// @include bp(sizeyouwant) { content }
+// @include bp(sm) { background: red; }
+//
+// ---------------------------------------------------------
+
+
+
+
+@use '../functions/' as *;
+@use '../config/' as *;
+
+@mixin bp($name) {
+    $value: get('break-point.#{$name}');
+        
+    @media (min-width: #{$value}) {
+        @content; 
+    }
+}
+
+

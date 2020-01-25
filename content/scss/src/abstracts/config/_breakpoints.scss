@@ -10,12 +10,12 @@
 
 $super-map: func.deep-map-merge(
   (
-    'break-points': (
-        'sm': 480, 
-        'md': 768,
-        'lg': 990, 
-        'xl': 1200,
-        'xxl': 1600
+    'break-point': (
+        'sm': func.rem-calc(480px), 
+        'md': func.rem-calc(768px),
+        'lg': func.rem-calc(990px),
+        'xl': func.rem-calc(1200px),
+        'xxl': func.rem-calc(1600px)
     )
   ),
   $super-map,
