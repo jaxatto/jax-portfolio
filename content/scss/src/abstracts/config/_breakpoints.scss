@@ -1,0 +1,23 @@
+// ---------------------------------------------------------
+// abstracts: breakpoints
+//
+// this map is utilized in mixins for simple reference
+//
+// ---------------------------------------------------------
+
+@use '../functions/' as func;
+@use 'root' as *;
+
+$super-map: func.deep-map-merge(
+  (
+    'break-points': (
+        'sm': 480, 
+        'md': 768,
+        'lg': 990, 
+        'xl': 1200,
+        'xxl': 1600
+    )
+  ),
+  $super-map,
+  true
+);

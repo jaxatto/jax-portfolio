@@ -1,5 +1,5 @@
 // ---------------------------------------------------------
-// _font.scss
+// abstracts: fonts
 //
 // setting values related to font
 // mixins will handle assingment to h1/h2/p, etc
@@ -12,7 +12,6 @@
 $super-map: func.deep-map-merge(
   (
     'font': (
-      'family': "Heebo, 'Open Sans', Helvetica, sans-serif", 
       'weight': (
         'regular': 400, 
         'bold': 500,
@@ -22,6 +21,9 @@ $super-map: func.deep-map-merge(
         'sm': func.rem-calc(14px),
         'md':  func.rem-calc(16px),
         'lg':  func.rem-calc(20px),
+      ),
+      'line-height': (
+        'default': 1.5
       )
     )
   ),

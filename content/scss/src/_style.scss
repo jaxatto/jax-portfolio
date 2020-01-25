@@ -5,17 +5,8 @@
 @use 'base' as *;
 
 body {
-    background: teal;
-    text-align: center;
+    background: get('color.primary');
 }
-
-// body {
-//     // background: get('color.primary');
-//     // color: clr(dark); 
-//     // font-family: $font-stack;
-//     // font-size: fs(default);
-//     // line-height: 1.5;
-// }
 
 // .container {
 //     display: grid;
@@ -25,66 +16,6 @@ body {
 // .content {
 //     // background: map($clr, light);
 // }
-
-// h1 {
-//     font-size: rem-calc(100px); 
-// }
-
-// stuff????
-
-
-
-
-// @use 'variables' as *;
-
-// @function rem-calc($size) {
-//     $remSize: $size / $root;
-//     @return #{$remSize}rem;
-// }
-
-// @function clr($value) {
-//     @return map-get($clr, $value);
-// }
-
-// @function fs($value) {
-//     @return map-get($font-size, $value);
-// }
-
-// @function fw($value) {
-//     @return map-get($font-weight, $value);
-// }
-
-// @function sz($value) {
-//     @return map-get($size-list, $value);
-// }
-
-// @function map($keys...) {
-//     $value: 0;
-
-//     @each $key in $keys {
-//         $value: map-get($value, $key);
-//     }
-
-//     @return $value;
-// }
-
-
-
-// @function z-index($keys...) {
-//   $value: $z-indexes;
-
-//   @each $key in $keys {
-//     $value: map-get($value, $key);
-//   }
-
-//   @return $value;
-// }
-
-// @function color($value) {  
-//     $value: map-get($value, $key);
-  
-//     @return $value;
-//   }
 
 // @mixin color-any($property, $value) {
 //     #{$property}: map-get($color, $value);

@@ -1,0 +1,12 @@
+@use '../abstracts/' as *;
+
+@import url('https://fonts.googleapis.com/css?family=Heebo:400,700,900&display=swap');
+
+$font-stack: 'Heebo', 'Open Sans', Helvetica, sans-serif;
+
+body {
+    color: get('color.dark');
+    font-family: $font-stack; 
+    font-weight: get('font.weight.regular');
+    line-height: get('font.line-height.default');
+}
