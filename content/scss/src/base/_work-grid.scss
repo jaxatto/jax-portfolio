@@ -1,0 +1,33 @@
+@use '../abstracts/' as *;
+
+.work {
+    display: grid;
+    grid-gap: rem-calc(8px); 
+
+    @include bp(sm) {
+        grid-template-columns: 45% 10% 45%;
+        grid-template-rows: rem-calc(240px 240px 240px 240px);
+    }
+}
+
+.work-item {
+    height: rem-calc(240px);
+
+    @include bp(sm) {
+        height: auto;
+    }
+
+    // junk 
+    background: red;
+    color: white;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.wi-1 { @include grid-child(1, 3, 1, 3); }
+.wi-2 { @include grid-child(3, 4, 1, 2); }
+.wi-3 { @include grid-child(1, 3, 3, 4); }
+.wi-4 { @include grid-child(3, 4, 2, 4); }
+.wi-5 { @include grid-child(1, 2, 4, 5); }
+.wi-6 { @include grid-child(2, 4, 4, 5); }

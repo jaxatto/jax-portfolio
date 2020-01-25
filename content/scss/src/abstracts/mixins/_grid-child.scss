@@ -1,0 +1,8 @@
+@use 'media-query' as *; 
+
+@mixin grid-child($col-start, $col-end, $row-start, $row-end) {
+    @include bp(sm) {
+        grid-column: #{$col-start}/#{$col-end};
+        grid-row: #{$row-start}/#{$row-end};
+    }
+}
