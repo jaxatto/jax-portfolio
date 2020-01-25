@@ -11,52 +11,57 @@
 }
 
 .work-item {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
     height: rem-calc(240px);
 
     @include bp(sm) {
         height: auto;
     }
-
-    // junk 
-    background: red;
-    color: white;
-    font-size: 30px;
-    font-weight: 900;
-    text-align: center;
 }
 
+$gively: url('../img/work-gively.png');
+$gively-style: url('../img/work-gively-styleg.png');
+$music: url('../img/work-music.png'); 
+$gb: url('../img/work-gb.png');
+$gb-web: url('../img/work-gb-web.png');
+$med: url('../img/work-med.png');
+
+
+
 .wi-1 { 
-    background-image: url('../img/work-gively.png');
+    background-image: $gively;
 
     @include grid-child(1, 3, 1, 3); 
 }
 
 .wi-2 { 
-    background-image: url('../img/work-gb-web.png');
+    background-image: $gb-web;
 
     @include grid-child(3, 4, 1, 2); 
 }
 
 .wi-3 { 
-    background-image: url('../img/work-music.png');
+    background-image: $music;
 
     @include grid-child(1, 3, 3, 4); 
 }
 
 .wi-4 { 
-    background-image: url('../img/work-med.png');
+    background-image: $med;
 
     @include grid-child(3, 4, 2, 4); 
 }
 
 .wi-5 { 
-    background-image: url('../img/work-gb.png');
+    background-image: $gb;
 
     @include grid-child(1, 2, 4, 5); 
 }
 
 .wi-6 { 
-    background-image: url('../img/work-gively-styleg.png');
+    background-image: $gively-style;
 
     @include grid-child(2, 4, 4, 5); 
 }
