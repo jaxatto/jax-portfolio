@@ -8,15 +8,23 @@
     box-sizing: border-box;
 }
 
+html {
+    background-color: get('color.primary');
+    background-image: url('../img/pattern.png');
+    background-repeat: repeat; 
+    background-size: 60%;
+
+    @include bp(md) {
+        background-size: 35%;
+    }
+}
+
 html, body {
     height: 100%;
 }
 
 body {
-    background-color: get('color.primary');
-    background-image: url('../img/pattern.png'); 
-    background-repeat: repeat; 
-    background-size: 35%;
+    background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0)); 
 }
 
 .container {
