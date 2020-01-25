@@ -1,0 +1,20 @@
+@use '../abstracts/' as *;
+@use '../base/' as *;
+
+.about {
+    margin: get('size.gap.4') 0;
+    padding: rem-calc(60px 40px);
+
+    @include bp(md) {
+        margin: 0;
+        padding: rem-calc(120px 80px);
+    }
+
+    p {
+        max-width: rem-calc(530px);
+    }
+}
+
+.about-text {
+    margin: get('size.mp.4') 0 get('size.mp.7') 0;
+}

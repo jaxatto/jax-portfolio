@@ -3,33 +3,41 @@
 .btn {
     border: rem-calc(1px) solid get('color.dark');
     border-radius: rem-calc(4px);
-    box-shadow: 4px 5px 0px get('color.dark');
+    box-shadow: rem-calc(4px 5px 0px) get('color.dark');
     color: get('color.dark'); 
     font-weight: get('font.weight.black');
+    letter-spacing: 0.1em;
     padding: rem-calc(12px 32px);
+    text-decoration: none;
     text-transform: lowercase;
+    transition: all ease-in-out 0.1s;
 
     &:hover {
-        cursor: pointer;
-        opacity: 0.5;
+        background: get('color.primary');
+        border-color: #000;
+        box-shadow: rem-calc(6px 7px 0px) #000;
+        color: #000;
+        cursor: pointer;  
+        // letter-spacing: 0.2em;
+    }
+
+    &:focus {
+        border: rem-calc(2px) dashed get('color.dark');
+        outline: none;
     }
 }
 
-.btn-primary {
+.btn-primary, .btn-secondary {
     @extend .btn; 
+}
 
+.btn-primary {
     background: get('color.secondary');
 }
 
 .btn-secondary {
-    @extend .btn; 
-
     background: get('color.tertiary');
 }  
-
-button {
-    @extend .btn; 
-}
 
 .btn-group {
     .btn:first-child {

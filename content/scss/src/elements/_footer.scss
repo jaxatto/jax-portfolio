@@ -8,6 +8,7 @@ footer {
     font-size: get('font.size.md'); 
     padding: get('size.mp.3');
     text-align: center;
+    text-transform: lowercase;
 
     span {
         opacity: 0.5;
