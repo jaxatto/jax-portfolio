@@ -4,19 +4,32 @@
 //
 // very, very simple function that converts pixels to rems 
 // using the root size defined in your variables.
-//
-// example use:
+// 
+// rem-calc(values); 
+// 
+// example: one value 
 // rem-calc(40px)
 // font-size: rem-calc(20px)
 // $h1: rem-calc(56px)
+// 
+// example: many values 
+// padding: rem-calc(100px 200px 100px 50px);
 //
 // be sure to change "root" to match your variable name
 // 
 // ---------------------------------------------------------
 
 @use '../config/root' as *;
+@use 'sass:list';
 
-@function rem-calc($size) {
-    $remSize: $size / $size-root;
-    @return #{$remSize}rem;
+@function rem-calc($values) {
+    $v: ();
+    
+    @each $value in $values {
+        $remSize: $value / $size-root;
+
+        $v: list.append($v, #{$remSize}rem);
+    };
+
+    @return $v; 
 }
