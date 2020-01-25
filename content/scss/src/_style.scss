@@ -31,3 +31,31 @@ section, footer {
     background: get('color.light');
     display: block;
 }
+
+.about {
+    margin: get('size.gap.4') 0;
+    padding: rem-calc(60px 40px);
+
+    @include bp(md) {
+        margin: 0;
+        padding: rem-calc(80px);
+    }
+
+    p {
+        max-width: rem-calc(530px);
+    }
+}
+
+.about-text {
+    margin: get('size.mp.4') 0 get('size.mp.7') 0;
+}
+
+.work {
+    margin-bottom: get('size.gap.4');
+    padding: rem-calc(40px);
+
+    @include bp(md) {
+        margin: 0;
+        padding: rem-calc(40px 80px);
+    }
+}

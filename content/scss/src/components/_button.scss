@@ -1,0 +1,38 @@
+@use '../abstracts/' as *;
+
+.btn {
+    border: rem-calc(1px) solid get('color.dark');
+    border-radius: rem-calc(4px);
+    box-shadow: 4px 5px 0px get('color.dark');
+    color: get('color.dark'); 
+    font-weight: get('font.weight.black');
+    padding: rem-calc(12px 32px);
+    text-transform: lowercase;
+
+    &:hover {
+        cursor: pointer;
+        opacity: 0.5;
+    }
+}
+
+.btn-primary {
+    @extend .btn; 
+
+    background: get('color.secondary');
+}
+
+.btn-secondary {
+    @extend .btn; 
+
+    background: get('color.tertiary');
+}  
+
+button {
+    @extend .btn; 
+}
+
+.btn-group {
+    .btn:first-child {
+        margin-right: rem-calc(8px);
+    }
+}

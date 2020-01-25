@@ -22,14 +22,17 @@ $super-map: func.deep-map-merge(
           '2': func.rem-calc(16px),
           '3': func.rem-calc(24px),
           '4': func.rem-calc(32px),
-          '5': func.rem-calc(40px)
+          '5': func.rem-calc(40px),
+          '6': func.rem-calc(48px), 
+          '7': func.rem-calc(56px),
       ), 
       // big area margin and padding
       'gap': (
-          'sm': func.rem-calc(24px),
-          'md': func.rem-calc(40px), 
-          'lg': func.rem-calc(60px),
-          'xl': func.rem-calc(80px)
+          '1': func.rem-calc(24px),
+          '2': func.rem-calc(32px),
+          '3': func.rem-calc(40px), 
+          '4': func.rem-calc(60px),
+          '5': func.rem-calc(80px)
       )
     )
   ),
