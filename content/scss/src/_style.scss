@@ -13,7 +13,10 @@ html, body {
 }
 
 body {
-    background: get('color.primary');
+    background-color: get('color.primary');
+    background-image: url('../img/pattern.png'); 
+    background-repeat: repeat; 
+    background-size: 35%;
 }
 
 .container {
@@ -57,5 +60,15 @@ section, footer {
     @include bp(md) {
         margin: 0;
         padding: rem-calc(40px 80px);
+    }
+}
+
+footer {
+    color: get('color.dark'); 
+    padding: get('size.mp.3');
+    text-align: center;
+
+    span {
+        opacity: 0.5;
     }
 }
