@@ -1,0 +1,66 @@
+@use '../abstracts/' as *;
+
+.work {
+    display: grid;
+    grid-gap: rem-calc(8px); 
+
+    @include bp(sm) {
+        grid-template-columns: 45% 10% 45%;
+        grid-template-rows: rem-calc(240px 240px 240px 240px);
+    }
+}
+
+$bg-overlay: rgba(get('color.secondary'), 0.5);
+$bg-color: linear-gradient($bg-overlay, $bg-overlay); 
+
+.work-item {
+    background-color: get('color.secondary');
+    height: rem-calc(240px);
+    opacity: 0.75;
+    overflow: hidden;
+    position: relative;
+
+    @include bp(sm) {
+        height: auto;
+    }
+
+    &:before, &:after {
+        content: "";
+        display: block;
+        height: 100%;
+        left: 0;
+        opacity: 0.4;  
+        position: absolute;   
+        width: 100%;
+        top: 0; 
+    }
+
+    &:before{
+        background-color: rgba(0,0,0,0.3);
+    }
+
+    &:after{
+        background-color: $bg-overlay;
+    }
+}
+
+@mixin work-item-mix($item-bg, $a1, $a2, $a3, $a4) {
+    background: $bg-color, $item-bg; 
+    background-size: cover; 
+
+    @include grid-child($a1, $a2, $a3, $a4); 
+}
+
+$gively: url('../img/work-gively.png');
+$gively-style: url('../img/work-gively-styleg.png');
+$music: url('../img/work-music.png'); 
+$gb: url('../img/work-gb.png');
+$gb-web: url('../img/work-gb-web.png');
+$med: url('../img/work-med.png');
+
+.wi-1 {  @include work-item-mix($gively, 1, 3, 1, 3); }
+.wi-2 {  @include work-item-mix($gb-web, 3, 4, 1, 2); }
+.wi-3 {  @include work-item-mix($music, 1, 3, 3, 4); }
+.wi-4 {  @include work-item-mix($med, 3, 4, 2, 4); }
+.wi-5 {  @include work-item-mix($gb, 1, 2, 4, 5); }
+.wi-6 {  @include work-item-mix($gively-style, 2, 4, 4, 5); }
