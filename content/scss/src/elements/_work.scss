@@ -17,8 +17,9 @@ $bg-color: linear-gradient($bg-overlay, $bg-overlay);
     background-color: get('color.secondary');
     height: rem-calc(240px);
     opacity: 0.75;
-    overflow: hidden;
     position: relative;
+    transition: all ease-in-out 0.2s; 
+    transition-delay: 0.05s;
 
     @include bp(sm) {
         height: auto;
@@ -41,6 +42,19 @@ $bg-color: linear-gradient($bg-overlay, $bg-overlay);
 
     &:after{
         background-color: $bg-overlay;
+    }
+
+    &:hover {
+        cursor: pointer;
+        opacity: 1; 
+
+        &:before, &:after {
+            opacity: 0;
+        }
+    }
+
+    &:focus {
+        border: rem-calc(2px) dashed get('color.dark'); 
     }
 }
 
