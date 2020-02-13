@@ -28,10 +28,14 @@ body {
     display: block;
     height: 100%;
     margin: 0 auto;
-    max-width: rem-calc(900px);
+    width: 100%;
 
-    @include bp(lg) {
+    @include bp(md) {
         background: get('color.light');
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: rem-calc(700px);
     }
 }
 
