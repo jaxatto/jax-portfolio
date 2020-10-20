@@ -20,6 +20,7 @@ Howdy, Jax here! I'm a UI/UX unicorn with a focus on evidence based design and d
 * Wireframing
 * Prototyping
 * High fidelity mockups
+<br/><br/>
 
 ### 💡 Methods
 Process is important to me, and these practices inform my approach to design.
@@ -30,6 +31,7 @@ Process is important to me, and these practices inform my approach to design.
 * Design thinking
 * Discover, define, develop, deliver
 * Deep design / development collaboration
+<br/><br/>
 
 ### 🛠️ Tools
 I'm a Figma evangelist with experience in a variety of tools within a software-based setting. I have my own development chops to backup my design expertise. 
@@ -46,6 +48,7 @@ I'm a Figma evangelist with experience in a variety of tools within a software-b
 * Git
 * Jira / Confluence
 * Github / GitLabs
+<br/><br/>
 
 ### Hire me!
 I'm looking for new design opportunities now, check out my [LinkedIn](https://www.linkedin.com/in/jaxengel/) or email me at hello@jax.works.
