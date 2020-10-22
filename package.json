@@ -1,7 +1,7 @@
 {
     "name": "jax-portfolio",
     "version": "1.0.0",
-    "description": "she do a build",
+    "description": "Jax Engel's UX Design Portfolio",
     "author": "Jax Engel",
     "license": "MIT",
     "main": "index.html",
@@ -20,6 +20,8 @@
         "browser-sync": "^2.26.7",
         "npm-run-all": "^4.1.5",
         "onchange": "^6.1.0",
+        "postcss": "^8.1.2",
+        "postcss-cli": "^8.1.0",
         "sass": "^1.25.0"
     }
 }

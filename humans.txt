@@ -14,7 +14,7 @@ Location: Austin, TX
 Last update: 2020/10/20                  
 Standards: HTML5, CSS3                       
 Components: N/A      
-Other Technologies: Sass, yarn, git
+Other Technologies: Sass, npm, git
 Packages: simple-hot-reload-server
 Software: VS Code, Terminal, Figma
 
