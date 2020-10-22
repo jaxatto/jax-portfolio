@@ -3,18 +3,18 @@
 
 # TEAM
                             
-Name: Jax Chastain                       
-LinkedIn: https://www.linkedin.com/in/jaxchastain/                      
-Twitter: @jaxatto                       
+Name: Jax Engel                       
+LinkedIn: https://www.linkedin.com/in/jaxengel/   
+Email: hello@jax.works                                       
 Location: Austin, TX
 
 
 # SITE
                             
-Last update: 2020/01/16                   
+Last update: 2020/10/20                  
 Standards: HTML5, CSS3                       
 Components: N/A      
-Other Technologies: Sass, npm, git
+Other Technologies: Sass, yarn, git
 Packages: simple-hot-reload-server
 Software: VS Code, Terminal, Figma
 
