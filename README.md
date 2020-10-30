@@ -50,5 +50,5 @@ I'm a Figma evangelist with experience in a variety of tools within a software-b
 * Github / GitLabs
 <br/><br/>
 
-### Hire me!
-I'm looking for new design opportunities now, check out my [LinkedIn](https://www.linkedin.com/in/jaxengel/) or email me at hello@jax.works.
+### Connect with me
+I'm no longer looking for new opportunities, but I'd love to connect on [LinkedIn](https://www.linkedin.com/in/jaxengel/).
